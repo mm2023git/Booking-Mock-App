@@ -1,5 +1,5 @@
 import './Navbar.css'
-
+import logo from './images/logo.png'
 
 function Navbar(){
 
@@ -7,13 +7,15 @@ function Navbar(){
     return(
         <div className = "topBar">
             <div className="brand">
-                <h1>BookingBuddy</h1>
+                <img src={logo} className="plane"></img>
             </div>
             <div className="nav-hold">
                 <h3 className='nav-items'></h3>
                 <h3 className='nav-items'>Trips</h3>
+                <h3 className='nav-items'>Support</h3>
                 <h3 className='nav-items'>Login</h3>
             </div>
+            
         </div>
     );
 }

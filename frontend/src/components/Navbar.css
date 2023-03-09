@@ -6,7 +6,8 @@
     background-color: #1a2123;
     display: flex;
     justify-content: center;
-    width: 100%;
+    border: 5px;
+    height: 75px;
 }
 
 .nav-hold{
@@ -25,11 +26,21 @@
     font-weight: 400;
 }
 
+.nav-items:hover{
+    background-color: #0e1213;
+}
+
 .brand{
     display: flex;
     color: #19c88b;
     align-items: center;
-    padding-right: 40%;
+    padding-right: 35%;
     font-family: 'Merriweather', serif;
 
 }
+
+.plane{
+    width: 250px;
+    border: 200px;
+}
+

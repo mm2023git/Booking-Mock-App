@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import Navbar from './components/Navbar';
+import Home from './components/Home'
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import {Routes, Route} from "react-router-dom"
 
 
 function App() {
@@ -14,10 +16,16 @@ function App() {
     });
   }, []);
 
+
   return (
-    <div>
+    <>
       <Navbar/>
-    </div>
+      <div>
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 

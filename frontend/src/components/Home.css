@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+.home{
+    display: block;
+}
+
+
+.hotel-example1{
+    width: 400px;
+    height: 400px;
+    box-shadow: inset;
+    border-radius: 6%;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    transition: all .2s ease-in-out; 
+    margin: 0% 5% 0% 5%;
+}
+
+
+
+
+.hotelimg{
+    width: 100%;
+    border-top-left-radius: 6%;
+    border-top-right-radius: 6%;
+}
+
+.hotel-example1:hover{
+    transform: scale(1.1);
+}
+
+
+.motto{
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.deal-containers{
+    width: fit-content;
+    max-width: 100vw;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+
+}

@@ -6,18 +6,40 @@
 }
 
 
-.hotel-example1{
-    width: 400px;
-    height: 400px;
+.hotel-example{
+    width: 25%;
+    height: 40%;
     box-shadow: inset;
     border-radius: 6%;
-    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.38);
     transition: all .2s ease-in-out; 
     margin: 0% 5% 0% 5%;
 }
 
+.location{
+    display: flex;
+    color: black;
+    font-size: .85vw;
+    padding-left: 5%;
+    padding-top: .05vw;
+}
 
+.hotel-name{
+    display: flex;
+    margin-left: auto;
+    font-size: .9vw;
+}
 
+.price-bar{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    margin: 0 auto;
+    border-bottom: 2px solid lightgray;
+    
+}
 
 .hotelimg{
     width: 100%;
@@ -25,7 +47,11 @@
     border-top-right-radius: 6%;
 }
 
-.hotel-example1:hover{
+.pinicon{
+    font-size: 1.1vw;
+}
+
+.hotel-example:hover{
     transform: scale(1.1);
 }
 
@@ -34,11 +60,14 @@
     padding-top: 100px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    font-size: 1.7vw;
 }
 
 .deal-containers{
     width: fit-content;
-    max-width: 100vw;
+    max-width: 80vw;
+    max-height: 70vw;
+    height: 80vw;
     padding-top: 100px;
     display: flex;
     justify-content: space-around;

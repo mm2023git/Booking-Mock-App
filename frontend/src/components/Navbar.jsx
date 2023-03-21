@@ -1,5 +1,7 @@
 import './Navbar.css'
 import logo from './images/logo.png'
+import {Link} from "react-router-dom"
+
 
 function Navbar(){
 
@@ -7,12 +9,12 @@ function Navbar(){
     return(
         <div className = "topBar">
             <div className="brand">
-                <img src={logo} className="plane"></img>
+                <img src={logo} className="plane" alt='logo'></img>
             </div>
             <div className="nav-hold">
-                <h3 className='nav-items'>Trips</h3>
-                <h3 className='nav-items'>Support</h3>
-                <h3 className='nav-items'>Login</h3>
+                <Link className='nav-items'>Trips</Link>
+                <Link className='nav-items'>Support</Link>
+                <Link className='nav-items'>Login</Link>
             </div>
             
         </div>

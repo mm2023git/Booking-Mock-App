@@ -1,12 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+ 
 
 .home{
-    display: block;
+   display: block;
+     
+}
+
+.search-bar{
+    display: flex;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+.border-container{
+    margin: 0 auto;
+    display: flex;
+}
+
+.search-text{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    border: none;
+    padding-right: 20%;
+}
+
+.search-text::placeholder{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    color: gray;
+}
+
+.search-text:focus{
+    outline: none; 
+}
+
+.search-icon{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.input-form{
+    width: 22vw;
+    border-radius: 15px;
+    border: 1px darkgray solid;
+    padding: 5px 5px 5px 25px;
 }
 
 
 .hotel-example{
+    text-decoration: none;
+    color: black;
     width: 25%;
     height: 40%;
     box-shadow: inset;
@@ -19,7 +71,7 @@
 .location{
     display: flex;
     color: black;
-    font-size: .85vw;
+    font-size: 1vw;
     padding-left: 5%;
     padding-top: .05vw;
 }
@@ -27,8 +79,10 @@
 .hotel-name{
     display: flex;
     margin-left: auto;
-    font-size: .9vw;
+    font-size: 1vw;
 }
+
+
 
 .price-bar{
     display: flex;

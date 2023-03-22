@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
  
+body{
+    font-size: 62.5%;
+}
 
 .home{
    display: block;
      
 }
 
+/*Motto */
+.motto{
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+}
+
+
+/*Search bar*/
 .search-bar{
     display: flex;
     padding-top: 75px;
@@ -46,32 +60,35 @@
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+    font-size: 1.5em;
 }
 
 .input-form{
-    width: 22vw;
+    width: 450px;
     border-radius: 15px;
     border: 1px darkgray solid;
-    padding: 5px 5px 5px 25px;
+    padding: 5px 0px 5px 25px;
+    
 }
 
-
+/*Bottom hotel cards*/
 .hotel-example{
     text-decoration: none;
     color: black;
-    width: 25%;
-    height: 40%;
+    min-height: 400px;
+    height: 37.5%;
+    width: 35em;
     box-shadow: inset;
     border-radius: 6%;
     box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.38);
     transition: all .2s ease-in-out; 
-    margin: 0% 5% 0% 5%;
 }
 
 .location{
     display: flex;
     color: black;
-    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
     padding-left: 5%;
     padding-top: .05vw;
 }
@@ -79,17 +96,18 @@
 .hotel-name{
     display: flex;
     margin-left: auto;
-    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
 }
 
 
 
-.price-bar{
+.loc-bar{
     display: flex;
     align-items: center;
     width: 85%;
-    padding-left: 3.5%;
-    padding-right: 3.5%;
+    padding-left: .5em;
+    padding-right: .5em;
     margin: 0 auto;
     border-bottom: 2px solid lightgray;
     
@@ -102,29 +120,55 @@
 }
 
 .pinicon{
-    font-size: 1.1vw;
+    font-size: 1.1em;
 }
 
 .hotel-example:hover{
     transform: scale(1.1);
 }
 
-
-.motto{
-    padding-top: 100px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.7vw;
-}
-
 .deal-containers{
-    width: fit-content;
+    display: flex;
     max-width: 80vw;
-    max-height: 70vw;
-    height: 80vw;
+    height: 85rem;
     padding-top: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0 auto;
+    column-gap: 3em;
 
+}
+
+
+/*Card amenities*/
+
+.amenities-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 0px;
+    justify-content: space-between;
+    row-gap: 1.5em;
+    align-content: center;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    
+}
+
+
+.icon{
+    display: flex;
+}
+
+.amenicon{
+    padding: 1em;
+    font-size: 1.75em;
+    
+}
+
+.icon-text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+    padding-right: 1em;
 }

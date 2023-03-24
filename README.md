@@ -3,7 +3,7 @@ Setup directions:
 
 Backend:
 1. Enter main directory
-2. python -m venv venv
+2. python3 -m venv venv
 3. pip install -r requirements.txt
 4. To run use flask run
 

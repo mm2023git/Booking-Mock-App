@@ -1,12 +1,47 @@
 import hotel from './images/hotel.jpeg'
 import hotel1 from './images/hotel1.jpeg'
 import hotel2 from './images/hotel2.jpeg'
-import './Home.css'
+import './css/Home.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faLocationDot, faSearch, faWifi, faDumbbell, faDog, faCoffee } from '@fortawesome/free-solid-svg-icons'
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
+import { useState } from 'react'
 
 function Home(){
+
+    const [searchTerm, setSearchTerm] = useState("");
+    const navigate = useNavigate();
+    
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+    
+        try {
+            const response = await fetch("http://localhost:5000/submit-seach-term", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ searchTerm }),
+            });
+        
+            if (!response.ok) {
+                throw new Error("Failed to submit search term");
+            }
+        
+            const data = await response.json();
+            console.log(data); // do something with the response data
+            navigate("/search"); // redirect to login page
+        } catch (error) {
+            console.error(error);
+        }
+        
+    }
+
+
+            
+    const handleInputChange = (event) => {
+        setSearchTerm(event.target.value);
+    };
+
+
     return(
         <div className="home">
             
@@ -14,8 +49,14 @@ function Home(){
 
             <div className='search-bar'>
                 <div className='border-container'>
-                    <form className='input-form'>
-                        <input type="text" placeholder='Begin searching' className='search-text'/>
+                    <form onSubmit= {handleSubmit} className='input-form'>
+                        <input         
+                            type="text"
+                            placeholder="Start searching"
+                            className="search-text"
+                            value={searchTerm}
+                            onChange={handleInputChange}
+                        />
                         <button className='search-icon' onClick={SubmitEvent}><FontAwesomeIcon icon = {faSearch} /></button>
                     </form>
                 </div>

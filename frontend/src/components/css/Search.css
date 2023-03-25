@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.search-container{
+    padding-top: 10em;
+    margin-right: auto;
+    padding-left: 12.5em;
+    padding-right: 10em;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 19.5em;
+    padding-bottom: 4em;
+}
+
+.sidebar-text{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.price-slider{
+    align-self: center;
+}
+
+.sidebar-label{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.price-slider::-ms-track {
+    height: 5px;
+    background: transparent;
+    border-color: transparent;
+    border-width: 6px 0;
+}
+
+.price-slider::-moz-range-track {
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+.price-slider::-moz-range-thumb {
+    border: 1px solid lightgray;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #3a494d;
+
+}
+
+.price-slider:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+.price-slider:focus::-moz-range-track {
+    background: #ccc;
+}
+
+
+.micro-label{
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.travellers{
+    font-size: 1.2em;
+}
+
+.guest-slider{
+    align-self: center;
+}

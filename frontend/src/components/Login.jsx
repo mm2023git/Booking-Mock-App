@@ -1,5 +1,3 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faUser } from '@fortawesome/free-solid-svg-icons'
 import {Link, useNavigate} from "react-router-dom"
 import { useState } from 'react'
 import './css/Login.css'
@@ -8,6 +6,7 @@ function Login(){
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [remember, setRemember] = useState("");
     const navigate = useNavigate();
     
     const handleSubmit = async (event) => {
@@ -26,7 +25,9 @@ function Login(){
         
             const data = await response.json();
             console.log(data); // do something with the response data
-            navigate("/"); // redirect to login page
+
+            //In future check if user data is correct
+            navigate("/"); // redirect to home page
         } catch (error) {
             console.error(error);
         }
@@ -61,8 +62,8 @@ function Login(){
                                 value={password} onChange={handlePasswordChange}/>
                         </div>
                         <div className="block-rows1">
-                            <input type="checkbox" placeholder="" className="text-input" 
-                                value={password} onChange={handlePasswordChange}/>
+                            <input type="checkbox" placeholder="" className="remember-input" 
+                                value={remember} onChange={handlePasswordChange}/>
                             <p className="label-text">Remember me</p>
                             <button onClick={SubmitEvent} className="login-button">Login</button>
                         </div>

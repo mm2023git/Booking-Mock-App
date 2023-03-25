@@ -28,7 +28,7 @@
 
 }
 .login-form{
-    width: 40em;
+    width: 400px;
     padding-top: 4em;
     padding-bottom: 6em;
     background-color: #1a2123;
@@ -48,8 +48,9 @@
     border: none;
     padding: 5px 0px 5px 25px;
     font-family: 'Poppins', sans-serif;
-
+    width: 220px;
 }
+
 
 .text-input::placeholder{
     color: gray;
@@ -64,6 +65,7 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    width: 250px;
 }
 
 .block-rows1{
@@ -108,4 +110,28 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.25em;
+}
+
+
+
+/*Customizations for register page*/
+.register-block{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding-top: 5em;
+}
+
+.register-btn{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background: white;
+    border: none;
+    border-radius: 12.5px;
+    width: 16em;
+    padding: 5px 0px 5px 0px;
+}
+
+.register-btn:hover{
+    cursor: pointer;
 }

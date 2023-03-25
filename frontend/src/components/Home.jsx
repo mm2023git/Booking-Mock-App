@@ -63,7 +63,7 @@ function Home(){
             </div>
 
             <div className='deal-containers'>
-                <Link to ="./login" className='hotel-example'>
+                <Link to ="./display" className='hotel-example'>
                     <img src= {hotel} className = "hotelimg" alt='hotel'/>
                     <div className='lower-box'>
                         <div className='loc-bar'>
@@ -89,9 +89,14 @@ function Home(){
                                 <p className='icon-text'>Continental Breakfast</p>
                             </div>
                         </div>
+
+                        <div className='sale-flex'>
+                            <p className='old-price'>$249</p>
+                            <p className='sale-price'>$179</p>
+                        </div>
                     </div>
                 </Link>
-                <Link to ="./login" className='hotel-example'>
+                <Link to ="./display" className='hotel-example'>
                     <img src= {hotel1} className = "hotelimg" alt='hotel'/>
                     <div className='lower-box'>
                         <div className='loc-bar'>
@@ -117,11 +122,16 @@ function Home(){
                                 <p className='icon-text'>Continental Breakfast</p>
                             </div>
                         </div>
+
+                        <div className='sale-flex'>
+                            <p className='old-price'>$399</p>
+                            <p className='sale-price'>$219</p>
+                        </div>
                         
                     </div>
                 </Link>
 
-                <Link to ="./login" className='hotel-example'>
+                <Link to ="./display" className='hotel-example'>
                     <img src= {hotel2} className = "hotelimg" alt='hotel'/>
                     <div className='lower-box'>
                         <div className='loc-bar'>
@@ -146,6 +156,11 @@ function Home(){
                                 <FontAwesomeIcon icon = {faCoffee} className="amenicon" />
                                 <p className='icon-text'>Continental Breakfast</p>
                             </div>
+                        </div>
+
+                        <div className='sale-flex'>
+                            <p className='old-price'>$349</p>
+                            <p className='sale-price'>$299</p>
                         </div>
                     </div>
                 </Link>

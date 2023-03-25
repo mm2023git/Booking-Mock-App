@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
-.body{
 
-}
 
 .parent-login{
     display: flex;
@@ -21,6 +19,8 @@
 
 }
 
+
+/*Parent*/
 .login-block{
     padding-top: 10%;
     display: flex;
@@ -60,6 +60,8 @@
     outline: none;
 }
 
+/* Container for  */
+
 .block-rows{
     display: flex;
     flex-direction: column;
@@ -82,6 +84,7 @@
     align-self: center;
 }
 
+/*Login button*/
 .label-text{
     align-self: flex-start;
     font-family: 'Poppins', sans-serif;

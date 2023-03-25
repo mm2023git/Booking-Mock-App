@@ -9,6 +9,7 @@
     padding-right: 10em;
 }
 
+/* Price slider */
 .sidebar{
     display: flex;
     flex-direction: column;
@@ -67,7 +68,7 @@
     background: #ccc;
 }
 
-
+/* Travellers Slider */
 .micro-label{
     font-family: 'Poppins', 'sans-serif';
     font-size: 1.3em;

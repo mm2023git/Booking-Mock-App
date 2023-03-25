@@ -27,8 +27,9 @@ function Home(){
             }
         
             const data = await response.json();
-            console.log(data); // do something with the response data
-            navigate("/search"); // redirect to login page
+            //Handle response data here
+            console.log(data); 
+            navigate("/search"); // redirect to search page
         } catch (error) {
             console.error(error);
         }
@@ -46,7 +47,7 @@ function Home(){
         <div className="home">
             
             <h1 className='motto'>Begin your next journey with us.</h1>
-
+            {/*Search Bar */}
             <div className='search-bar'>
                 <div className='border-container'>
                     <form onSubmit= {handleSubmit} className='input-form'>
@@ -61,7 +62,7 @@ function Home(){
                     </form>
                 </div>
             </div>
-
+            {/*Card containers for hotel displays*/}
             <div className='deal-containers'>
                 <Link to ="./display" className='hotel-example'>
                     <img src= {hotel} className = "hotelimg" alt='hotel'/>

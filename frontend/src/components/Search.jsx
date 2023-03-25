@@ -20,16 +20,18 @@ function Search(){
     const handleChildrenChange = (event) =>{
         setChildren(event.target.value)
     }
-
+    //Update input values
     return(
         <div className="search-container">
             <div className="sidebar">
                 <p className="sidebar-text">Filter By:</p>
+                {/* Update price range.*/}
                 <div className="price-slider">
                     <p className="sidebar-label">Price per night:</p>
                     <p className="micro-label">{price}$</p>
                     <input type="range" min="0" max="1000" step="100" value={price} className="price-slider" id="myRange" onChange={handlePriceChange} />       
                 </div>
+                {/* Update information on amount of travellers.*/}
                 <div className="guest-slider">
                     <p className="sidebar-label">Travellers:</p>
                     <p className="micro-label travellers">Adults: {adults}</p>
